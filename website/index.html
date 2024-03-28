@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+  <meta charset="utf-8">
+  <title>module-solution</title>
+  <style>
+  body
+ {
+ margin: 0;
+padding: 10px;
+font-family: Helvetica;
+}
+.box-container
+{
+
+}
+.box
+{
+background-color: gray;
+padding: 15px;
+border: 1px solid black;
+margin: 7px;
+width: calc(33.33% - 20px);
+/* Adjusted width to fit three boxes in one row */
+box-sizing: border-box;
+position: relative;
+float: left; /* Added float: left; to make the boxes float */
+}
+.content
+{  
+padding: 5px;
+}
+h1 {
+margin-bottom: 30px;
+color: red;
+font-size: 60px;
+text-align: center;
+}
+/* Title style for each box */ h2, h3, h4
+{
+color: white;
+font-size: 26px;
+text-align: left;  
+position: absolute;
+top: 0.5px; right: 0.5px; padding: 3.5px;
+}
+
+/* Specific title styles for each box */
+h2
+{
+font-size: 30px;
+color: orange;
+}
+h3
+{
+font-size: 30px;
+color: green;  
+}
+h4
+{
+font-size: 30px;
+color: blue;
+
+} @media screen and (max-width: 768px) {.box { width: calc(50% -20px);/* Adjusted width for tablet view*/ }}
+@media screen and (max-width: 480px) {.box { width: calc(100% - 20px);/* Adjusted widtch for mobile view*/ }}
+@media screen and (max-width: 992px) {.box { width: calc(25% - 20px); /* Adjusted width for desktop view*/ }}
+</style>
+</head>
+<body>
+<h1>SPORTS</h1>
+<section class="box-container">
+<div class="box">
+<h2>Basketball</h2>
+<p>&nbsp;</p>
+<div class="content">
+ <p style="font-size: 20px">
+ Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball through the defender's hoop, while preventing the opposing team from shooting through their own hoop. Points are scored as 1pt, 2pt and 3pts.
+</p>
+</div>
+</div>
+<div class="box">
+<h3>Golf</h3>
+<p>&nbsp;</p>
+<div class="content">
+ <p style="font-size: 20px">
+ Golf is a club-and-ball sport in which players use various clubs to hit a ball into a series of holes on a course in as few strokes as possible. Golf, unlike most ball games, cannot and does not use a standardized playing area, and coping with the varied terrains encountered on different courses is a key and important part of the game.
+</p>
+</div>
+</div>
+<div class="box">
+<h4>Soccer</h4>
+<p>&nbsp;</p>
+<div class="content">
+ <p style="font-size: 20px">
+ Soccer is a team sport played between two teams of 11 players each, who primarily use their feet to propel a ball around a rectangular field called a pitch. The objective of the game is to score more goals than the opposing team by moving the ball beyond the goal line into a rectangular-framed goal defended by the opposing team.
+</p>
+</div>
+</div>
+</section>
+</body>
+</html>
