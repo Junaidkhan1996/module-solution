@@ -29,10 +29,20 @@ float: left; /* Added float: left; to make the boxes float */
 
 .content
 {  
-padding: 10px;
+padding: 30px;
 margin-top: -25px;
-margin-bottom: -15px;
+margin-bottom: -25px;
+margin-left: -10px;
+margin-right: -10px;
 }
+
+#p1 {
+	float: left;
+}
+#p2 {
+	float: left;
+}
+
 h1 {
 margin-bottom: 80px;
 color: red;
@@ -88,9 +98,99 @@ margin-top: 0px;
 background-color: yellow;
 }
 
-@media screen and (max-width: 768px) {.box { width: calc(50% -20px);/* Adjusted width for tablet view*/ }}
-@media screen and (max-width: 767px) {.box { width: calc(100% - 20px);/* Adjusted width for mobile view*/ }}
-@media screen and (max-width: 991px) {.box { width: calc(25% - 20px); /* Adjusted width for desktop view*/ }}
+/* Simple responsive framework. */
+.row {
+	width: 100%;
+}
+
+/* Large devices only */
+@media (min-width: 1200px) {
+	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+		float: left;
+		border: 1px solid green;
+	}
+	.col-lg-1 {
+		width: 8.33%;
+	}
+	.col-lg-2 {
+		width: 16.66%;
+	}
+	.col-lg-3 {
+		width: 25%;
+	}
+	.col-lg-4 {
+		width: 33.33%;
+	}
+	.col-lg-5 {
+		width: 41.66%;
+	}
+	.col-lg-6 {
+		width: 50%;
+	}
+	.col-lg-7 {
+		width: 58.33%;
+	}
+	.col-lg-8 {
+		width: 66.66%;
+	}
+	.col-lg-9 {
+		width: 74.99%;
+	}
+	.col-lg-10 {
+		width: 83.33%;
+	}
+	.col-lg-11 {
+		width: 91.66%;
+	}
+	.col-lg-12 {
+		width: 100%;
+	}
+}
+
+/* Medium devices only */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-md-1 {
+  	width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -100,7 +200,7 @@ background-color: yellow;
 <h2>Basketball</h2>
 <p>&nbsp;</p>
 <div class="content">
- <p style="font-size: 20px">
+ <p1 style="font-size: 20px">
  Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball through the defender's hoop, while preventing the opposing team from shooting through their own hoop. Points are scored as 1pt, 2pt and 3pts.
 </p>
 </div>
@@ -109,7 +209,7 @@ background-color: yellow;
 <h3>Golf</h3>
 <p>&nbsp;</p>
 <div class="content">
- <p style="font-size: 20px">
+ <p2 style="font-size: 20px">
  Golf is a club-and-ball sport in which players use various clubs to hit a ball into a series of holes on a course in as few strokes as possible. Golf, unlike most ball games, cannot and does not use a standardized playing area, and coping with the varied terrains encountered on different courses is a key and important part of the game.
 </p>
 </div>
@@ -118,7 +218,7 @@ background-color: yellow;
 <h4>Soccer</h4>
 <p>&nbsp;</p>
 <div class="content">
- <p style="font-size: 20px">
+ <p3 style="font-size: 20px">
  Soccer is a team sport played between two teams of 11 players each, who primarily use their feet to propel a ball around a rectangular field called a pitch. The objective of the game is to score more goals than the opposing team by moving the ball beyond the goal line into a rectangular-framed goal defended by the opposing team.
 </p>
 </div>
