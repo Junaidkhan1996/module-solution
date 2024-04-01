@@ -10,8 +10,12 @@
 padding: 10px;
 font-family: Helvetica;
 }
-.box-container
+.flex-container
 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 100%;
 
 }
 .box
@@ -36,18 +40,18 @@ margin-left: -10px;
 margin-right: -10px;
 }
 
-#p1 {
-	float: left;
-}
-#p2 {
-	float: left;
-}
+<div class="flex-container">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
 
 h1 {
 margin-bottom: 80px;
 color: red;
 font-size: 60px;
 text-align: center;
+/* Important */
 }
 /* Title style for each box */ h2, h3, h4
 {
@@ -148,7 +152,7 @@ background-color: yellow;
 }
 
 /* Medium devices only */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) (width: 100%-500px) /* Adjusted width to 100% on devices below 500px */ {
 	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
     border: 1px solid green;
@@ -195,7 +199,7 @@ background-color: yellow;
 </head>
 <body>
 <h1>SPORTS</h1>
-<section class="box-container">
+<section class="flex-container">
 <div class="box">
 <h2>Basketball</h2>
 <p>&nbsp;</p>
