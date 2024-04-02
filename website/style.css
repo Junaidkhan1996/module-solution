@@ -24,8 +24,8 @@ h1 {
  align-items: center;
  justify-content: center;
  display: flex;
- border-bottom:1.5px solid black ;
- border-left: 1.5px solid black;
+ border-bottom:1px solid black ;
+ border-left: 1px solid black;
  }
  .box-all .individual-box{
  color: black;
