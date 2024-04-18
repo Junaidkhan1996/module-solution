@@ -1,0 +1,132 @@
+
+  body{
+    font-size: 16px;
+  background-color: rgb(48, 3, 145);
+ 
+  font-family: 'Oxygen', sans-serif; 
+    color: #ffff00;
+
+  }
+  nav{
+    background-color: rgb(166, 166, 166);
+  }
+  .headingHP{
+    height: 60px;
+     margin-bottom: 15px;
+
+  }
+ 
+  .headingHP p{
+    color: #361010;
+  text-transform: uppercase;
+  font-size: .8em;
+  }
+  .navbar-brand {
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  text-shadow: 1px 1px 1px #222;
+    font-family: serif;
+   
+  }
+  .navbar-brand h2 {
+ color: green;
+  }
+  .navbar-brand::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: darkblue; /* Same color as above */
+    margin-top:-6px;
+}
+  .navbar-nav {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    background-color: green;
+  }
+
+
+  .navbar-nav .nav-item {
+    display: inline-block;
+    border: 1px solid black;
+  }
+
+
+  @media (min-width: 768px) {
+    .navbar-nav,
+    .navbar-toggler {
+      display: none;
+    }
+    
+  }
+  @media (min-width: 992px) {
+    .navbar-nav .nav-item {
+        border: none;
+        font-weight: 600;
+        font-size: 20px;
+      }
+    .navbar-nav{
+        margin-bottom: 10px;
+        gap: 30px;
+        justify-content: flex-end; 
+      }
+  }
+
+  /* center section */
+
+  .col-md-12{
+    display: flex;
+    flex-direction: column; 
+  }
+ 
+
+  .col-md-12 > div {
+    border: 1.5px solid #000; 
+    padding: 20px 0;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(38, 4, 110);
+  }
+  .col-md-12 > div p {
+    text-align: justify;
+    margin: 0; /* Remove default margin */
+  }
+/* FOOTER */
+.panel-footer {
+  background-color: #222;
+}
+
+.last-section {
+  padding-top: 40px;
+}
+
+#address p {
+  color: #557c3e;
+  padding-top: 10px;
+}
+
+#reviews {
+  font-style: italic;
+}
+
+#reviews p:nth-child(2) {
+  margin-top: 25px;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #000; 
+  margin: 20px 0; 
+  display: block; 
+}
+
+@media (min-width: 567px) {
+  .separator {
+    display: none; 
+  }
+}  
